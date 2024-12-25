@@ -1,0 +1,186 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navvy{
+    position: fixed;
+    width: 50%;
+    z-index: -1;
+    cursor: pointer;
+}
+.nav-item{
+    margin-right: 5px;
+}
+#classlist:hover, #amongus:hover, #searchy:hover, #studs:hover, #homess:hover, #insights:hover{
+  border-radius: 0;
+  color: white;
+  background-color: #222e50;
+}
+
+#homess{
+    color: white;
+    background-color: #222e50;
+}
+.imgg{
+    width: 20px;
+}
+li {
+    list-style-type: none;
+}
+hr.liness {
+    border: 43px solid #c9c9c9fa;
+    margin: 0;
+  }
+#imggg{
+    outline: 5px auto -webkit-focus-ring-color !important;
+    outline-offset: -2px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+.vl {
+    border-left: 2px solid #c9c9c9fa;
+    opacity: 1;
+    height: 100vh;
+    position: absolute;
+    left: 74%;
+    top: 0;
+  }
+.table-hover tbody tr:hover td {
+    background-color: darkblue;
+    color: white;
+}
+.table-striped tr:nth-child(even) td {
+    background-color: lightblue;
+}
+.table td {
+    text-align: center;
+    } 
+.wrapper{
+    margin-top: 100px;
+    position: absolute;
+    left: 77%;
+    top: 0;
+    width: 380px;
+    background: #fff;
+    border-radius: 10px;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+}
+
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: darkblue;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+.popup-animation {
+  animation: show-form 1.2s ease-in-out;
+}
+
+.smooth-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes show-form {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

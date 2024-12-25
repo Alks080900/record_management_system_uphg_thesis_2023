@@ -1,0 +1,81 @@
+.get_in_touch{
+    max-width: 800px;
+    margin: 50px auto;
+    position: absolute;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+    padding: 30px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.get_in_touch .title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: yellow;
+    background: linear-gradient(to right, #f6fa13 0%, #292230 100%);
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-form .form-field, .form-select{
+    position: relative;
+    margin: 32px 0;
+}
+.contact-form .input-text, select{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(129, 127, 15);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text .not-empty + label{
+    transform: translateY(-24px);
+}
+.contact-form .input-text:focus, select{
+    outline: none;
+}
+select{
+    color: black;
+    font-size: 15px;
+}
+#date{
+    color: black;
+    font-size: 11px;
+    padding-top: 11px;
+    padding-left: 5px;
+}
+.contact-form .label{
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn{
+    display: inline-block;
+    background-image: linear-gradient(125deg, #f6fa13, #292230);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 24px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 110px;
+    margin-left: 20px;
+}
